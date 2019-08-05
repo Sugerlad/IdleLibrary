@@ -35,16 +35,18 @@ dependencies {
     api 'com.sina.weibo.sdk:core:4.4.0:openDefaultRelease@aar'
 
 }
-version='0.0.1'
+version='1.0.0'
+group = 'work.ishang.library'
 project.ext {
     mavDevelopers = ["Sugerlad":"Sugerlad"]
     mavSiteUrl = "https://github.com/sugerlad/IdleLibrary"
     mavGitUrl = mavSiteUrl + '.git'
     mavProjectName = 'IdleLibrary'
+    mavPluginVersion = 'add-classifier'
     mavPublishToInternalRepo = true
-    mavRepoInternalUrl = "path/to/internal/repo"
+    mavRepoInternalUrl = "/Users/DDD/Documents/jitpack"
     mavLibraryLicenses = ["Apache-2.0":'http://www.apache.org/licenses/LICENSE-2.0.txt']
     mavLibraryDescription = "A simple project that shows how to publish library with classifiers to Jitpack by gradle-maven-plugin"
 }
-apply from: "https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/add-classifier/gradle-mavenizer.gradle"
+apply from: "https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/${project.mavPluginVersion}/gradle-mavenizer.gradle"
 
